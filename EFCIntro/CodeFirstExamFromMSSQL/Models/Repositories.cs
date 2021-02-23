@@ -10,9 +10,7 @@ namespace CodeFirstExamFromMSSQL.Models
 
         public Repositories()
         {
-            Commits = new HashSet<Commits>();
-            Issues = new HashSet<Issues>();
-            RepositoriesContributors = new HashSet<RepositoriesContributors>();
+           
         }
 
         public int Id { get; set; }

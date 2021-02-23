@@ -14,7 +14,7 @@ namespace CodeFirstExamFromMSSQL.Models
 
         public Issues()
         {
-            Commits = new HashSet<Commits>();
+           
         }
         public int Id { get; set; }
 
@@ -26,14 +26,14 @@ namespace CodeFirstExamFromMSSQL.Models
         public string IssueStatus { get; set; }
 
 
-        [ForeignKey("Repositiories")]
+       
         public int RepositoryId { get; set; }
-        public Repositories Repository { get; set; }
+        public  virtual Repositories Repository { get; set; }
 
 
-        [ForeignKey("Users")]
+    
         public int AssigneeId { get; set; }
-        public Users User { get; set; }
+        public  virtual Users User { get; set; }
 
 
         public virtual ICollection<Commits> Commits { get; set; }

@@ -22,13 +22,13 @@ namespace CodeFirstExamFromMSSQL.Models
         public decimal Size { get; set; }
 
 
-        [ForeignKey("Files")]
+       
         public int? ParentId { get; set; }
-        public Files Parent { get; set; }
+        public virtual Files Parent { get; set; }
 
-        [ForeignKey("Commits")]
+       
         public int CommitId { get; set; }
-        public Commits Commit { get; set; }
+        public virtual Commits Commit { get; set; }
 
     }
 }

@@ -19,24 +19,24 @@ namespace CodeFirstExamFromMSSQL.Models
 
         public Commits()
         {
-            Files = new HashSet<Files>();
+           
         }
         public int Id { get; set; }
 
         [MaxLength(255)]
         public string Message { get; set; }
 
-        [ForeignKey("Issues")]
+        
         public int IssueId { get; set; }
-        public Issues Issue { get; set; }
+        public virtual Issues Issue { get; set; }
 
-        [ForeignKey("Repositiories")]
+       
         public int RepositoryId { get; set; }
-        public Repositories Repository { get; set; }
+        public virtual Repositories Repository { get; set; }
 
-        [ForeignKey("Users")]
+        
         public int ContributorId { get; set; }
-        public Users User { get; set; }
+        public virtual Users User { get; set; }
 
 
         public virtual ICollection<Files> Files { get; set; }

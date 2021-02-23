@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CodeFirstExamFromMSSQL.Migrations
 {
     [DbContext(typeof(BitBuckerContext))]
-    [Migration("20210223130200_InitialCreate")]
+    [Migration("20210223141101_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

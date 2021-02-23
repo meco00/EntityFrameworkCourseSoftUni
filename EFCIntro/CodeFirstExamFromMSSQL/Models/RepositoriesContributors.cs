@@ -14,14 +14,14 @@ namespace CodeFirstExamFromMSSQL.Models
         //PRIMARY KEY(RepositoryId, ContributorId)
 
         
-        [ForeignKey("Repositiories")]
+        
         public int RepositoryId { get; set; }
-        public Repositories Repository { get; set; }
+        public virtual Repositories Repository { get; set; }
 
         
-        [ForeignKey("Users")]
+       
         public int ContributorId { get; set; }
-        public Users User { get; set; }
+        public virtual Users User { get; set; }
 
 
     }
