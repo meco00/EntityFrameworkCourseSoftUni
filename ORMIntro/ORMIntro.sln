@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORMIntro", "ORMIntro.csproj", "{3F3DBE1B-584D-4128-8CA2-F569D012009F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeFirstDemo", "..\CodeFirstDemo\CodeFirstDemo.csproj", "{C4D33768-2D00-4BE1-AE9A-CB0B032CA851}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F3DBE1B-584D-4128-8CA2-F569D012009F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F3DBE1B-584D-4128-8CA2-F569D012009F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F3DBE1B-584D-4128-8CA2-F569D012009F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F3DBE1B-584D-4128-8CA2-F569D012009F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4D33768-2D00-4BE1-AE9A-CB0B032CA851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4D33768-2D00-4BE1-AE9A-CB0B032CA851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4D33768-2D00-4BE1-AE9A-CB0B032CA851}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4D33768-2D00-4BE1-AE9A-CB0B032CA851}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {115298E4-E42A-476B-A554-6260C9260AD0}
+	EndGlobalSection
+EndGlobal
