@@ -12,7 +12,7 @@ namespace P03_FootballBetting.Data.Models
 
         public string Name { get; set; }
 
-        public string SquadNumber { get; set; }
+        public int SquadNumber { get; set; }
 
         public int TeamId { get; set; }
         public Team Team { get; set; }

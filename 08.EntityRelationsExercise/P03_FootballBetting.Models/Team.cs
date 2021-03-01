@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
 
 namespace P03_FootballBetting.Data.Models
 {
@@ -15,7 +13,10 @@ namespace P03_FootballBetting.Data.Models
         public string Name { get; set; }
 
         [Required]
-        [Column(TypeName = "CHAR(3)")]
+        public string LogoUrl { get; set; }
+
+        [Required]
+        
         public string Initials { get; set; }
 
         public decimal Budget { get; set; }

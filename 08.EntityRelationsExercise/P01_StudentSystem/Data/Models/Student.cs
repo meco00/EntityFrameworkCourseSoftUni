@@ -20,6 +20,8 @@ namespace P01_StudentSystem.Data.Models
         [Required]
         public DateTime RegisteredOn { get; set; }
 
+        public DateTime? Birthday { get; set; }
+
 
         public virtual ICollection<Homework> HomeworkSubmissions { get; set; } = new HashSet<Homework>();
 

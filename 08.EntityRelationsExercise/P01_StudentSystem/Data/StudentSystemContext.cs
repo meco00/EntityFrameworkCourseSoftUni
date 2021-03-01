@@ -13,7 +13,7 @@ namespace P01_StudentSystem.Data
                 
         }
 
-        public StudentSystemContext(DbContextOptions options):base()
+        public StudentSystemContext(DbContextOptions options):base(options)
         {
 
         }
@@ -27,11 +27,15 @@ namespace P01_StudentSystem.Data
             base.OnConfiguring(optionsBuilder);
         }
 
-        public DbSet<Course> Courses { get; set; }
-        public DbSet<Homework> Homeworks { get; set; }
-        public DbSet<Resource> Resources { get; set; }
         public DbSet<Student> Students { get; set; }
-        public DbSet<StudentCourse> HomeworkSubmissions { get; set; }
+
+        public DbSet<Homework> HomeworkSubmissions { get; set; }
+
+        public DbSet<Resource> Resources { get; set; }
+
+        public DbSet<Course> Courses { get; set; }
+
+        public DbSet<StudentCourse> StudentCourses { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
