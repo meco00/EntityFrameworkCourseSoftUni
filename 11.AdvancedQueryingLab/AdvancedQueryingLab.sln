@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvancedQueryingLab", "AdvancedQueryingLab.csproj", "{EB61B189-C5F1-42C5-B98F-E330E1BDB5F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB61B189-C5F1-42C5-B98F-E330E1BDB5F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB61B189-C5F1-42C5-B98F-E330E1BDB5F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB61B189-C5F1-42C5-B98F-E330E1BDB5F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB61B189-C5F1-42C5-B98F-E330E1BDB5F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F5F34A07-ED0C-46F7-BF20-18EC087928D7}
+	EndGlobalSection
+EndGlobal
