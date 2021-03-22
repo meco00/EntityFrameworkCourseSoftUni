@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RealEstate.Modelse\RealEstate.Modelse.csproj" />
+    <ProjectReference Include="..\RealEstates.Datase\RealEstates.Datase.csproj" />
+  </ItemGroup>
+
+</Project>
