@@ -1,0 +1,26 @@
+﻿
+@model IEnumerable<RealEstates.Services.Models.DistrictInfoDto>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Real Estates!!</h1>
+    
+</div>
+<table class="table table-striped table-hover table-sm">
+    <tr>
+        <th>Name</th>
+        <th>AveragePricePerSquareKm</th>
+        <th>Properties</th>
+    </tr>
+    @foreach (var item in this.Model)
+    {
+        <tr>
+            <th>@item.Name</th>
+            <th>@item.AveragePricePerSquareMeter.ToString("0.00")€</th>
+            <th>@item.PropertiesCount</th>
+        </tr>
+
+    }
+</table>

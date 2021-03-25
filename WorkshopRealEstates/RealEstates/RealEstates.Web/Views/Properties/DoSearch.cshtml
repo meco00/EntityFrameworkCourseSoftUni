@@ -1,0 +1,24 @@
+﻿@model IEnumerable<RealEstates.Services.Models.PropertyInfoDto>
+
+<h1>Search Results</h1>
+
+<table class="table table-sm table-striped table-bordered table-hover" >
+    <tr>
+        <th>District</th>
+        <th>Size</th>
+        <th>Price</th>
+        <th>PropertyType</th>
+        <th>BuildingType</th>
+    </tr>
+    @foreach (var item in this.Model)
+    {
+        <tr>
+            <th>@item.DistrictName</th>
+            <th>@item.Size</th>
+            <th>@item.Price€</th>
+            <th>@item.PropertyType</th>
+            <th>@item.BuildingType</th>
+        </tr>
+
+    }
+</table>
