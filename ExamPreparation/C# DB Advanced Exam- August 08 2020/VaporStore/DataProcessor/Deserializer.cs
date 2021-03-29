@@ -143,10 +143,7 @@
                     })
                     .ToList()
 
-
-
                 };
-
                 usersToImportInDB.Add(userToImport);
 
                 sb.AppendLine($"Imported {userToImport.Username} with {userToImport.Cards.Count} cards");
@@ -186,9 +183,7 @@
                     {
                         sb.AppendLine(ERROR_MESSAGE);
                         continue;
-                    }
-
-                   
+                    }              
 
                     Card card = context.Cards.FirstOrDefault(c => c.Number == purchasesDto.Card);
                     if (card == null)
@@ -225,8 +220,6 @@
 
 
             }
-
-
         }
         private static bool IsValid(object dto)
         {

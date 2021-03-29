@@ -33,6 +33,8 @@
 			var jsonOutput = Serializer.ExportGamesByGenres(context, new[] { "Nudity", "Violent" });
 			PrintAndExportEntityToFile(jsonOutput, exportDir + "GamesByGenres.json");
 
+			
+
 			var xmlOutput = Serializer.ExportUserPurchasesByType(context, "Digital");
 			PrintAndExportEntityToFile(xmlOutput, exportDir + "UserPurchases.xml");
 		}
