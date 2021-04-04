@@ -1,0 +1,25 @@
+Xml Serialize:
+var serializer = new XmlSerializer(typeof(PrisonerOutputXmlModel[]), new XmlRootAttribute("Prisoners"));
+
+         var ns = new XmlSerializerNamespaces();
+         ns.Add("", "");
+
+       var sb = new StringBuilder();
+
+      serializer.Serialize(new StringWriter(sb), prisonersOutputModel, ns);
+
+
+Xml Deserialize:
+
+var sb = new StringBuilder();
+
+            var serializer = 
+                new XmlSerializer(typeof(ImportOfficerPrisonersXmlInputModel[]),
+                new XmlRootAttribute("Officers"));
+
+            var reader = new StringReader(xmlString);
+
+            var officerPrisonersInputModel = serializer.Deserialize(reader) as ImportOfficerPrisonersXmlInputModel[];
+
+
+psw : ef-core-exam
